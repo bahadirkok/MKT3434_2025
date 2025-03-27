@@ -1,0 +1,73 @@
+# Machine Learning Training Interface
+
+A PyQt6-based GUI application for experimenting with machine learning algorithms, featuring data loading, model training, and visualization capabilities.
+
+## Features
+
+- **Data Management**
+  - Built-in datasets (Iris, Breast Cancer, MNIST, etc.)
+  - Custom CSV file loading
+  - Train-test split configuration
+  - Data scaling (Standard, Min-Max, Robust)
+
+- **Machine Learning Algorithms**
+  - **Classical ML**
+    - Regression: Linear, SVM
+    - Classification: Logistic Regression, SVM, Decision Trees, Random Forest, Naive Bayes, KNN
+  - **Deep Learning** (TensorFlow/Keras)
+    - MLP with customizable layers
+    - CNN/RNN placeholders (for future implementation)
+  - **Dimensionality Reduction**
+    - PCA, K-Means
+
+- **Model Evaluation**
+  - Regression Metrics: MSE, MAE, Huber Loss, R²
+  - Classification Metrics: Accuracy, Confusion Matrix, Cross-Entropy, Hinge Loss
+
+- **Visualization**
+  - Interactive Matplotlib plots
+  - Regression: Predicted vs Actual values
+  - Classification: PCA projections
+
+## Installation
+
+1. **Prerequisites**
+   - Python 3.9.2 - 3.9.11
+   - pip package manager
+
+2. **Install dependencies**
+   ```bash
+   pip install PyQt6 numpy pandas scikit-learn matplotlib tensorflow-cpu
+
+
+3. Basic Workflow
+
+  "Select a dataset from the dropdown or load your own CSV
+
+  Choose preprocessing options (scaling, test split ratio)
+
+  Navigate to algorithm tabs to configure parameters
+
+  Click "Train" to run the model
+
+  View results in the visualization panel and metrics display"   
+
+                            Troubleshooting
+Common Issues:
+
+TensorFlow errors: Ensure you have tensorflow-cpu installed if you don't have GPU support like me
+
+-bash-
+
+pip uninstall tensorflow
+pip install tensorflow-cpu
+PyQt6 compatibility: Use Python 3.9.x for best results
+
+PyQt6==6.4.0
+numpy==1.23.5
+pandas==1.5.2
+scikit-learn==1.2.0
+matplotlib==3.6.2
+tensorflow-cpu==2.11.0
+
+                            
